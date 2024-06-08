@@ -10,16 +10,16 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #000000;
 }
 
 a {
-  color: #47b2e4;
+  color: #4c330c;
   text-decoration: none;
 }
 
 a:hover {
-  color: #73c5eb;
+  color: #011721;
   text-decoration: none;
 }
 
@@ -43,7 +43,7 @@ h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #37517e;
+  background: #a3a5a9;
 }
 
 #preloader:before {
@@ -53,7 +53,7 @@ h6 {
   left: calc(50% - 30px);
   border: 6px solid #37517e;
   border-top-color: #fff;
-  border-bottom-color: #fff;
+  border-bottom-color: #200202;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -91,7 +91,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #47b2e4;
+  background: #100a05;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -100,13 +100,13 @@ h6 {
 
 .back-to-top i {
   font-size: 24px;
-  color: #fff;
+  color: #000000;
   line-height: 0;
 }
 
 .back-to-top:hover {
-  background: #6bc1e9;
-  color: #fff;
+  background: #000000;
+  color: #490e0e;
 }
 
 .back-to-top.active {
@@ -125,7 +125,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: rgba(40, 58, 90, 0.9);
+  background: rgba(0, 0, 0, 0.9);
 }
 
 #header .logo {
@@ -139,7 +139,7 @@ h6 {
 }
 
 #header .logo a {
-  color: #fff;
+  color: #ffffff;
 }
 
 #header .logo img {
@@ -176,7 +176,7 @@ h6 {
   padding: 10px 0 10px 30px;
   font-size: 15px;
   font-weight: 500;
-  color: #fff;
+  color: #ff9100;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -192,7 +192,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #47b2e4;
+  color: #000000;
 }
 
 .navbar .getstarted,
@@ -200,16 +200,16 @@ h6 {
   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 50px;
-  color: #fff;
+  color: #161515;
   font-size: 14px;
-  border: 2px solid #47b2e4;
+  border: 2px solid #000000;
   font-weight: 600;
 }
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
-  color: #fff;
-  background: #31a9e1;
+  color: #831c1c;
+  background: #000000;
 }
 
 .navbar .dropdown ul {
@@ -222,8 +222,8 @@ h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  background: #060505;
+  box-shadow: 0px 0px 30px rgba(3, 3, 3, 0.25);
   transition: 0.3s;
   border-radius: 4px;
 }
@@ -237,7 +237,7 @@ h6 {
   font-size: 14px;
   text-transform: none;
   font-weight: 500;
-  color: #0c3c53;
+  color: #000000;
 }
 
 .navbar .dropdown ul a i {
@@ -247,7 +247,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: #47b2e4;
+  color: #000000;
 }
 
 .navbar .dropdown:hover>ul {
@@ -283,7 +283,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: #e37200;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -292,7 +292,7 @@ h6 {
 }
 
 .mobile-nav-toggle.bi-x {
-  color: #fff;
+  color: #ffa601;
 }
 
 @media (max-width: 991px) {
@@ -312,7 +312,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(40, 58, 90, 0.9);
+  background: rgba(0, 0, 0, 0.9);
   transition: 0.3s;
   z-index: 999;
 }
@@ -341,19 +341,19 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #37517e;
+  color: #000000;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #47b2e4;
+  color: #000000;
 }
 
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
   margin: 15px;
-  color: #37517e;
+  color: #4b1226;
 }
 
 .navbar-mobile .dropdown ul {
@@ -364,7 +364,7 @@ h6 {
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  background: #fff;
+  background: #000000;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
@@ -383,7 +383,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #47b2e4;
+  color: #020608;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -396,7 +396,7 @@ h6 {
 #hero {
   width: 100%;
   height: 80vh;
-  background: #37517e;
+  background: #000000;
 }
 
 #hero .container {
@@ -408,11 +408,11 @@ h6 {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: #fff;
+  color: #000000;
 }
 
 #hero h2 {
-  color: rgba(255, 255, 255, 0.6);
+  color: rgb(255, 157, 0);
   margin-bottom: 50px;
   font-size: 24px;
 }
@@ -427,12 +427,12 @@ h6 {
   border-radius: 50px;
   transition: 0.5s;
   margin: 10px 0 0 0;
-  color: #fff;
-  background: #47b2e4;
+  color: #ffae00;
+  background: #09202a;
 }
 
 #hero .btn-get-started:hover {
-  background: #209dd8;
+  background: #518299;
 }
 
 #hero .btn-watch-video {
@@ -441,20 +441,20 @@ h6 {
   align-items: center;
   transition: 0.5s;
   margin: 10px 0 0 25px;
-  color: #fff;
+  color: #000000;
   line-height: 1;
 }
 
 #hero .btn-watch-video i {
   line-height: 0;
-  color: #fff;
+  color: #423f87;
   font-size: 32px;
   transition: 0.3s;
   margin-right: 8px;
 }
 
 #hero .btn-watch-video:hover i {
-  color: #47b2e4;
+  color: #000000;
 }
 
 #hero .animated {
@@ -538,7 +538,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f3f5fa;
+  background-color: #d6d98f33c;
 }
 
 .section-title {
@@ -562,7 +562,7 @@ section {
   display: block;
   width: 120px;
   height: 1px;
-  background: #ddd;
+  background: d98f33#d98f33;
   bottom: 1px;
   left: calc(50% - 60px);
 }
@@ -636,7 +636,7 @@ section {
   left: 0;
   top: 2px;
   font-size: 20px;
-  color: #47b2e4;
+  color: #6b9e80;
   line-height: 1;
 }
 
@@ -654,16 +654,16 @@ section {
   border-radius: 4px;
   transition: 0.3s;
   line-height: 1;
-  color: #47b2e4;
+  color: #000000;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
   margin-top: 6px;
-  border: 2px solid #47b2e4;
+  border: 2px solid #000000;
 }
 
 .about .content .btn-learn-more:hover {
-  background: #47b2e4;
-  color: #fff;
+  background: #d98f33;
+  color: #d98f33;
   text-decoration: none;
 }
 
@@ -677,7 +677,7 @@ section {
 .why-us .content h3 {
   font-weight: 400;
   font-size: 34px;
-  color: #37517e;
+  color: #000000;
 }
 
 .why-us .content h4 {
@@ -688,7 +688,7 @@ section {
 
 .why-us .content p {
   font-size: 15px;
-  color: #848484;
+  color: #581f1f;
 }
 
 .why-us .img {
@@ -712,7 +712,7 @@ section {
 
 .why-us .accordion-list li {
   padding: 20px;
-  background: #fff;
+  background: #d98f33;
   border-radius: 4px;
 }
 
@@ -729,7 +729,7 @@ section {
 }
 
 .why-us .accordion-list span {
-  color: #47b2e4;
+  color: #000000;
   font-weight: 600;
   font-size: 18px;
   padding-right: 10px;
@@ -908,19 +908,19 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)), url("../img/cta-bg.jpg") fixed center center;
+  background: linear-gradient(rgba(163, 132, 9, 0.9), rgba(23, 19, 6, 0.9)), url("../img/cta-bg.jpg") fixed center center;
   background-size: cover;
   padding: 120px 0;
 }
 
 .cta h3 {
-  color: #fff;
+  color: #ffffff;
   font-size: 28px;
   font-weight: 700;
 }
 
 .cta p {
-  color: #fff;
+  color: #e6e4e4;
 }
 
 .cta .cta-btn {
@@ -938,8 +938,8 @@ section {
 }
 
 .cta .cta-btn:hover {
-  background: #47b2e4;
-  border: 2px solid #47b2e4;
+  background: #000000;
+  border: 2px solid #000000;
 }
 
 @media (max-width: 1024px) {
@@ -971,7 +971,7 @@ section {
   font-size: 15px;
   font-weight: 500;
   line-height: 1;
-  color: #444444;
+  color: #490505;
   transition: all 0.3s;
   padding: 8px 20px;
   border-radius: 50px;
@@ -980,8 +980,8 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  background: #47b2e4;
-  color: #fff;
+  background: #000000;
+  color: #d98f33;
 }
 
 .portfolio .portfolio-item {
@@ -1004,7 +1004,7 @@ section {
   z-index: 3;
   right: 15px;
   transition: all 0.3s;
-  background: rgba(55, 81, 126, 0.8);
+  background: rgba(0, 0, 0, 0.8);
   padding: 10px 15px;
 }
 
@@ -1034,7 +1034,7 @@ section {
 
 .portfolio .portfolio-item .portfolio-info .preview-link:hover,
 .portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: #47b2e4;
+  color: #000000;
 }
 
 .portfolio .portfolio-item .portfolio-info .details-link {
@@ -1070,11 +1070,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #47b2e4;
+  border: 1px solid #000000;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #47b2e4;
+  background-color: #000000;
 }
 
 .portfolio-details .portfolio-info {
@@ -1122,7 +1122,7 @@ section {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 30px;
   border-radius: 5px;
-  background: #fff;
+  background: #47433e;
   transition: 0.5s;
 }
 
@@ -1148,7 +1148,7 @@ section {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
-  color: #37517e;
+  color: #000000;
 }
 
 .team .member span {
@@ -1165,7 +1165,7 @@ section {
   display: block;
   width: 50px;
   height: 1px;
-  background: #cbd6e9;
+  background: #212936;
   bottom: 0;
   left: 0;
 }
@@ -1194,13 +1194,13 @@ section {
 }
 
 .team .member .social a i {
-  color: #37517e;
+  color: #144931;
   font-size: 16px;
   margin: 0 2px;
 }
 
 .team .member .social a:hover {
-  background: #47b2e4;
+  background: #4d2f2f;
 }
 
 .team .member .social a:hover i {
@@ -1355,7 +1355,7 @@ section {
 
 .faq .faq-list li {
   padding: 20px;
-  background: #fff;
+  background: #000000;
   border-radius: 4px;
   position: relative;
 }
@@ -1377,7 +1377,7 @@ section {
   position: absolute;
   right: 0;
   left: 20px;
-  color: #47b2e4;
+  color: #000000;
 }
 
 .faq .faq-list .icon-show,
@@ -1398,12 +1398,12 @@ section {
 }
 
 .faq .faq-list a.collapsed {
-  color: #37517e;
+  color: #523a3a34;
   transition: 0.3s;
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #47b2e4;
+  color: #a74949;
 }
 
 .faq .faq-list a.collapsed .icon-show {
@@ -1424,21 +1424,21 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact .info {
-  border-top: 3px solid #47b2e4;
-  border-bottom: 3px solid #47b2e4;
+  border-top: 3px solid #b8e31a;
+  border-bottom: 3px solid #b4ea1f;
   padding: 30px;
-  background: #fff;
+  background: #ffffff;
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
 }
 
 .contact .info i {
   font-size: 20px;
-  color: #47b2e4;
+  color: #ffffff;
   float: left;
   width: 44px;
   height: 44px;
-  background: #e7f5fb;
+  background: #eba10d;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1451,14 +1451,14 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #37517e;
+  color: #050608;
 }
 
 .contact .info p {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #6182ba;
+  color: #030405;
 }
 
 .contact .info .email p {
@@ -1473,7 +1473,7 @@ section {
   font-size: 18px;
   display: inline-block;
   background: #333;
-  color: #fff;
+  color: #000000;
   line-height: 1;
   padding: 8px 0;
   border-radius: 50%;
@@ -1485,21 +1485,21 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: #47b2e4;
-  color: #fff;
+  background: #52352c;
+  color: #000000;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #47b2e4;
-  color: #fff;
+  background: #344952;
+  color: #251e1e;
 }
 
 .contact .php-email-form {
   width: 100%;
-  border-top: 3px solid #47b2e4;
-  border-bottom: 3px solid #47b2e4;
+  border-top: 3px solid #373e41;
+  border-bottom: 3px solid #29353a;
   padding: 30px;
   background: #fff;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
@@ -1532,7 +1532,7 @@ section {
 
 .contact .php-email-form .sent-message {
   display: none;
-  color: #fff;
+  color: #000000;
   background: #18d26e;
   text-align: center;
   padding: 15px;
@@ -1541,7 +1541,7 @@ section {
 
 .contact .php-email-form .loading {
   display: none;
-  background: #fff;
+  background: #304d4b;
   text-align: center;
   padding: 15px;
 }
@@ -1553,8 +1553,8 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
+  border: 3px solid #3a4c42;
+  border-top-color: #473232;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
@@ -1577,7 +1577,7 @@ section {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #47b2e4;
+  border-color: #000000;
 }
 
 .contact .php-email-form input {
@@ -1589,16 +1589,16 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #47b2e4;
+  background: #000000;
   border: 0;
   padding: 12px 34px;
-  color: #fff;
+  color: #a1a8a8;
   transition: 0.4s;
   border-radius: 50px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #209dd8;
+  background: #4e455a;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1626,7 +1626,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #f3f5fa;
+  background: #44464d;
   min-height: 40px;
   margin-top: 72px;
 }
@@ -1668,7 +1668,7 @@ section {
 --------------------------------------------------------------*/
 #footer {
   font-size: 14px;
-  background: #37517e;
+  background: #868686;
 }
 
 #footer .footer-newsletter {
@@ -1685,7 +1685,7 @@ section {
   padding: 0;
   line-height: 1;
   font-weight: 600;
-  color: #37517e;
+  color: #2c4448;
 }
 
 #footer .footer-newsletter form {
@@ -1713,7 +1713,7 @@ section {
   background: none;
   font-size: 16px;
   padding: 0 20px;
-  background: #47b2e4;
+  background: #44535a;
   color: #fff;
   transition: 0.3s;
   border-radius: 50px;
@@ -1721,12 +1721,12 @@ section {
 }
 
 #footer .footer-newsletter form input[type=submit]:hover {
-  background: #209dd8;
+  background: #293d45;
 }
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #fff;
+  background: #014f4b;
 }
 
 #footer .footer-top .footer-contact {
@@ -1740,7 +1740,7 @@ section {
   line-height: 1;
   text-transform: uppercase;
   font-weight: 600;
-  color: #37517e;
+  color: #000000;
 }
 
 #footer .footer-top .footer-contact p {
@@ -1748,13 +1748,13 @@ section {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Jost", sans-serif;
-  color: #5e5e5e;
+  color: #fffefe;
 }
 
 #footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #37517e;
+  color: #0c1c38;
   position: relative;
   padding-bottom: 12px;
 }
@@ -1771,7 +1771,7 @@ section {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #47b2e4;
+  color: #000000;
   font-size: 18px;
   line-height: 1;
 }
@@ -1787,7 +1787,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #777777;
+  color: #ffffff;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -1795,13 +1795,13 @@ section {
 
 #footer .footer-top .footer-links ul a:hover {
   text-decoration: none;
-  color: #47b2e4;
+  color: #535a5d;
 }
 
 #footer .footer-top .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #47b2e4;
+  background: #314255;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1814,15 +1814,15 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #209dd8;
-  color: #fff;
+  background: #ffd48e;
+  color: #524646;
   text-decoration: none;
 }
 
 #footer .footer-bottom {
   padding-top: 30px;
   padding-bottom: 30px;
-  color: #fff;
+  color: #444d4f;
 }
 
 #footer .copyright {
