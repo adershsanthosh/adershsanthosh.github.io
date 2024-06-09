@@ -432,7 +432,7 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
-  background: #518299;
+  background: #040506;
 }
 
 #hero .btn-watch-video {
@@ -447,7 +447,7 @@ h6 {
 
 #hero .btn-watch-video i {
   line-height: 0;
-  color: #423f87;
+  color: #eaad11;
   font-size: 32px;
   transition: 0.3s;
   margin-right: 8px;
