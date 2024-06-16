@@ -1,16 +1,9 @@
-/**
-* Template Name: Arsha - v4.9.1
-* Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #000000;
+  color: #eebf05;
 }
 
 a {
@@ -43,23 +36,84 @@ h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #a3a5a9;
+  background: #000000;
 }
 
 #preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #37517e;
-  border-top-color: #fff;
-  border-bottom-color: #200202;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  -webkit-animation: animate-preloader 1s linear infinite;
-  animation: animate-preloader 1s linear infinite;
+  html {
+    height: 100%;
+  }
+  
+  body {
+    background-image: radial-gradient(circle farthest-corner at center, #3C4B57 0%, #1C262B 100%);
+  }
+  
+  .loader {
+    position: absolute;
+    top: calc(50% - 32px);
+    left: calc(50% - 32px);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    perspective: 800px;
+  }
+  
+  .inner {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;  
+  }
+  
+  .inner.one {
+    left: 0%;
+    top: 0%;
+    animation: rotate-one 1s linear infinite;
+    border-bottom: 3px solid #EFEFFA;
+  }
+  
+  .inner.two {
+    right: 0%;
+    top: 0%;
+    animation: rotate-two 1s linear infinite;
+    border-right: 3px solid #EFEFFA;
+  }
+  
+  .inner.three {
+    right: 0%;
+    bottom: 0%;
+    animation: rotate-three 4s linear infinite;
+    border-top: 3px solid #EFEFFA;
+  }
 }
+  
+  @keyframes rotate-one {
+    0% {
+      transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+  }
+  
+  @keyframes rotate-two {
+    0% {
+      transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+  }
+  
+  @keyframes rotate-three {
+    0% {
+      transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+  }
 
 @-webkit-keyframes animate-preloader {
   0% {
@@ -139,7 +193,7 @@ h6 {
 }
 
 #header .logo a {
-  color: #ffffff;
+  color: #ffd549;
 }
 
 #header .logo img {
@@ -176,7 +230,7 @@ h6 {
   padding: 10px 0 10px 30px;
   font-size: 15px;
   font-weight: 500;
-  color: #ff9100;
+  color: #ffcf32;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -283,7 +337,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #e37200;
+  color: #ffcf32;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -292,7 +346,8 @@ h6 {
 }
 
 .mobile-nav-toggle.bi-x {
-  color: #ffa601;
+  color:#ffcf32;
+  ;
 }
 
 @media (max-width: 991px) {
@@ -332,7 +387,7 @@ h6 {
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #09080860;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -341,19 +396,19 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #000000;
+  color: #ffb71c;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #000000;
+  color: #f9b20c;
 }
 
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
   margin: 15px;
-  color: #4b1226;
+  color: #ffb71c;
 }
 
 .navbar-mobile .dropdown ul {
@@ -364,8 +419,8 @@ h6 {
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  background: #000000;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  background: #ffb71c;
+  box-shadow: 0px 0px 30px rgb(255, 196, 4);
 }
 
 .navbar-mobile .dropdown ul li {
@@ -412,7 +467,7 @@ h6 {
 }
 
 #hero h2 {
-  color: rgb(255, 157, 0);
+  color: rgba(221, 169, 85, 0.895);
   margin-bottom: 50px;
   font-size: 24px;
 }
@@ -428,11 +483,11 @@ h6 {
   transition: 0.5s;
   margin: 10px 0 0 0;
   color: #ffae00;
-  background: #09202a;
+  background: #154b62;
 }
 
 #hero .btn-get-started:hover {
-  background: #040506;
+  background: #83a7cb;
 }
 
 #hero .btn-watch-video {
@@ -441,7 +496,7 @@ h6 {
   align-items: center;
   transition: 0.5s;
   margin: 10px 0 0 25px;
-  color: #000000;
+  color: #ff9d00;
   line-height: 1;
 }
 
@@ -454,11 +509,12 @@ h6 {
 }
 
 #hero .btn-watch-video:hover i {
-  color: #000000;
+  color: #d9983e;
 }
 
 #hero .animated {
-  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  animation: up-down 3s ease-in-out infinite alternate-reverse both;
+  
 }
 
 @media (max-width: 991px) {
@@ -535,10 +591,12 @@ h6 {
 section {
   padding: 60px 0;
   overflow: hidden;
+  background-color: #000000;
 }
 
 .section-bg {
-  background-color: #d6d98f33c;
+  background-color:#020101;
+  ;
 }
 
 .section-title {
@@ -548,21 +606,22 @@ section {
 
 .section-title h2 {
   font-size: 32px;
-  font-weight: bold;
+  font-weigh:bold;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   padding-bottom: 20px;
   position: relative;
-  color: #37517e;
+  color:#d98f33;
+
 }
 
 .section-title h2::before {
-  content: "";
+  content:"";
   position: absolute;
   display: block;
   width: 120px;
   height: 1px;
-  background: d98f33#d98f33;
+  background: #d98f33;
   bottom: 1px;
   left: calc(50% - 60px);
 }
