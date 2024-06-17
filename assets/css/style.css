@@ -36,84 +36,23 @@ h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #000000;
+  background: #a3a5a9;
 }
 
 #preloader:before {
-  html {
-    height: 100%;
-  }
-  
-  body {
-    background-image: radial-gradient(circle farthest-corner at center, #3C4B57 0%, #1C262B 100%);
-  }
-  
-  .loader {
-    position: absolute;
-    top: calc(50% - 32px);
-    left: calc(50% - 32px);
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    perspective: 800px;
-  }
-  
-  .inner {
-    position: absolute;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;  
-  }
-  
-  .inner.one {
-    left: 0%;
-    top: 0%;
-    animation: rotate-one 1s linear infinite;
-    border-bottom: 3px solid #EFEFFA;
-  }
-  
-  .inner.two {
-    right: 0%;
-    top: 0%;
-    animation: rotate-two 1s linear infinite;
-    border-right: 3px solid #EFEFFA;
-  }
-  
-  .inner.three {
-    right: 0%;
-    bottom: 0%;
-    animation: rotate-three 4s linear infinite;
-    border-top: 3px solid #EFEFFA;
-  }
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #ad1c1c;
+  border-top-color: #2e41ec;
+  border-bottom-color: #ffd106;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
 }
-  
-  @keyframes rotate-one {
-    0% {
-      transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
-    }
-    100% {
-      transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
-    }
-  }
-  
-  @keyframes rotate-two {
-    0% {
-      transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
-    }
-    100% {
-      transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
-    }
-  }
-  
-  @keyframes rotate-three {
-    0% {
-      transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
-    }
-    100% {
-      transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
-    }
-  }
 
 @-webkit-keyframes animate-preloader {
   0% {
@@ -145,7 +84,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #100a05;
+  background: #c6a081;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -159,8 +98,8 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #000000;
-  color: #490e0e;
+  background: #5c8b52;
+  color: #ffffff;
 }
 
 .back-to-top.active {
@@ -262,7 +201,7 @@ h6 {
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
-  color: #831c1c;
+  color: #000000;
   background: #000000;
 }
 
@@ -387,7 +326,7 @@ h6 {
   left: 15px;
   padding: 10px 0;
   border-radius: 10px;
-  background-color: #09080860;
+  background-color: #fba017;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -396,19 +335,19 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #ffb71c;
+  color: #ececec;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #f9b20c;
+  color: #000000;
 }
 
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
   margin: 15px;
-  color: #ffb71c;
+  color: #ffffff;
 }
 
 .navbar-mobile .dropdown ul {
@@ -438,11 +377,12 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #020608;
+  color: #000000;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
+  color: #154b62;
 }
 
 /*--------------------------------------------------------------
@@ -463,11 +403,11 @@ h6 {
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
-  color: #000000;
+  color: #ffb92d;
 }
 
 #hero h2 {
-  color: rgba(221, 169, 85, 0.895);
+  color: rgba(255, 179, 57, 0.895);
   margin-bottom: 50px;
   font-size: 24px;
 }
@@ -483,11 +423,11 @@ h6 {
   transition: 0.5s;
   margin: 10px 0 0 0;
   color: #ffae00;
-  background: #154b62;
+  background: #425f2f;
 }
 
 #hero .btn-get-started:hover {
-  background: #83a7cb;
+  background: #040506;
 }
 
 #hero .btn-watch-video {
@@ -496,7 +436,7 @@ h6 {
   align-items: center;
   transition: 0.5s;
   margin: 10px 0 0 25px;
-  color: #ff9d00;
+  color: #bcbcbc;
   line-height: 1;
 }
 
@@ -509,12 +449,11 @@ h6 {
 }
 
 #hero .btn-watch-video:hover i {
-  color: #d9983e;
+  color: #2f5e6f;
 }
 
 #hero .animated {
-  animation: up-down 3s ease-in-out infinite alternate-reverse both;
-  
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
 @media (max-width: 991px) {
@@ -606,7 +545,7 @@ section {
 
 .section-title h2 {
   font-size: 32px;
-  font-weigh:bold;
+  font-weight:bold;
   text-transform: uppercase;
   margin-bottom: 50px;
   padding-bottom: 20px;
@@ -616,7 +555,7 @@ section {
 }
 
 .section-title h2::before {
-  content:"";
+  content: "";
   position: absolute;
   display: block;
   width: 120px;
