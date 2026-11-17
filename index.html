@@ -655,12 +655,18 @@
     input,
     select,
     textarea {
+      width: 100%;
+      min-width: 0;
       background: var(--bg);
       color: #fff;
       border: 1px solid var(--ln);
       border-radius: 6px;
       padding: 12px;
       font: inherit
+    }
+
+    textarea {
+      resize: vertical
     }
 
     input:focus,
@@ -678,6 +684,67 @@
 
     #fmsg {
       min-height: 1.4em
+    }
+
+    #send-options.ctas {
+      margin-top: 0
+    }
+
+    @media(max-width:600px) {
+      .wrap {
+        padding: 0 18px
+      }
+
+      section {
+        padding: 76px 0
+      }
+
+      nav {
+        padding: 12px 18px
+      }
+
+      #hero {
+        min-height: 100svh;
+        padding-top: 96px
+      }
+
+      #stage {
+        max-width: 360px
+      }
+
+      .svc {
+        grid-template-columns: 1fr
+      }
+
+      .svc .card {
+        padding: 22px
+      }
+
+      .pj {
+        gap: 22px
+      }
+
+      .two {
+        gap: 30px
+      }
+    }
+
+    @media(max-width:380px) {
+      .wrap {
+        padding: 0 16px
+      }
+
+      section {
+        padding: 64px 0
+      }
+
+      nav {
+        padding: 12px 16px
+      }
+
+      .btn {
+        padding: 12px 16px
+      }
     }
 
     footer {
@@ -879,6 +946,7 @@
             <label>Project description<textarea name="msg" rows="5" required></textarea><span
                 class="err"></span></label>
             <button class="btn p" type="submit" style="justify-content:center">Send enquiry</button>
+            <p class="mu" id="form-help">After validating, choose email or WhatsApp and confirm sending in that app.</p>
             <div id="send-options" class="ctas" role="group" aria-label="Choose how to send your enquiry" hidden></div>
             <div id="fmsg" role="status"></div>
           </form>
