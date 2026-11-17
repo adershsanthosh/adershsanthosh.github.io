@@ -879,6 +879,7 @@
             <label>Project description<textarea name="msg" rows="5" required></textarea><span
                 class="err"></span></label>
             <button class="btn p" type="submit" style="justify-content:center">Send enquiry</button>
+            <div id="send-options" class="ctas" role="group" aria-label="Choose how to send your enquiry" hidden></div>
             <div id="fmsg" role="status"></div>
           </form>
         </div>
@@ -904,7 +905,7 @@
   <script>
     /* ============ EDITABLE CONFIG — change everything here ============ */
     const CONFIG = {
-      email: "",            // e.g. "you@example.com" — enables email button + form fallback
+      email: "adershsanthosh137@gmail.com", // enables email contact and enquiry option
       whatsapp: "919074059203", // full number with country code, digits only
       linkedin: "", github: "", portfolio: "",
       cvUrl: "",            // link to your CV PDF — shows the Download CV button
@@ -976,16 +977,27 @@
     $("#fs").innerHTML = [[CONFIG.github, "GitHub"], [CONFIG.linkedin, "LinkedIn"], [CONFIG.email && `mailto:${CONFIG.email}`, "Email"], [CONFIG.portfolio, "Portfolio"]].filter(x => x[0]).map(x => `<a href="${esc(x[0])}" target="_blank" rel="noopener">${x[1]}</a>`).join("");
 
     /* form */
+    const sendOptions = $("#send-options");
     $("#form").addEventListener("submit", async e => {
       e.preventDefault(); const f = e.target, m = $("#fmsg"); let ok = true;
       const chk = (n, t, msg) => {const i = f[n], er = i.nextElementSibling; const bad = !t(i.value.trim()); er.textContent = bad ? msg : ""; if (bad) ok = false};
       chk("name", v => v.length > 1, "Please enter your name."); chk("email", v => /^\S+@\S+\.\S+$/.test(v), "Enter a valid email address."); chk("msg", v => v.length > 9, "Describe your project in at least 10 characters.");
-      if (!ok) return;
+      if (!ok) {sendOptions.hidden = true; sendOptions.replaceChildren(); return}
       const d = Object.fromEntries(new FormData(f));
       if (CONFIG.formEndpoint) {m.textContent = "Sending…"; try {const r = await fetch(CONFIG.formEndpoint, {method: "POST", headers: {"Content-Type": "application/json", Accept: "application/json"}, body: JSON.stringify(d)}); if (!r.ok) throw 0; m.textContent = "Thanks — your enquiry was sent. I’ll reply by email."; f.reset()} catch {m.textContent = "Sending failed. Please try again or use the email button."} }
-      else if (CONFIG.email) {location.href = `mailto:${CONFIG.email}?subject=${encodeURIComponent("Project enquiry: " + d.type)}&body=${encodeURIComponent(`Name: ${d.name}\nEmail: ${d.email}\nBudget: ${d.budget}\n\n${d.msg}`)}`; m.textContent = "Opening your email app with the enquiry filled in."}
+      else if (CONFIG.email || CONFIG.whatsapp) {
+        const subject = encodeURIComponent("Project enquiry: " + d.type);
+        const body = encodeURIComponent(`Name: ${d.name}\nEmail: ${d.email}\nProject type: ${d.type}\nBudget: ${d.budget}\n\n${d.msg}`);
+        const options = [];
+        if (CONFIG.email) options.push({href: `mailto:${CONFIG.email}?subject=${subject}&body=${body}`, label: "Send by email"});
+        if (CONFIG.whatsapp) options.push({href: `https://wa.me/${CONFIG.whatsapp}?text=${body}`, label: "Send by WhatsApp"});
+        sendOptions.innerHTML = options.map((o, i) => `<a class="btn${i ? "" : " p"}" href="${esc(o.href)}" target="_blank" rel="noopener">${o.label}</a>`).join("");
+        sendOptions.hidden = false;
+        m.textContent = "Choose a method below. Your message will be prefilled; confirm sending in the selected app.";
+      }
       else m.textContent = "Form is validated but not connected yet: add formEndpoint or email in CONFIG."
     });
+    $("#form").addEventListener("input", () => {sendOptions.hidden = true; sendOptions.replaceChildren(); $("#fmsg").textContent = ""});
 
     /* 3D hero */
     (function () {
